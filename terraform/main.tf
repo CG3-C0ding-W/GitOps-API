@@ -7,14 +7,14 @@ terraform {
     }
 }
 
-resource "kind){
+resource "kind_cluster" "this" {
     name            = "gitops"
     wait_for_ready  = true
-    kind_config     = file("${path.module}/kind-config.yaml
+    kind_config     = file("${path.module}/kind-config.yaml")
 }
 
 provider "helm" {
-    kubernetes {
+    kubernetes = {
         host                    = kind_cluster.this.endpoint
         client_certificate      = kind_cluster.this.client_certificate
         client_key              = kind_cluster.this.client_key
