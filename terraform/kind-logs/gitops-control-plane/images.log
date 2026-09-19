@@ -1,0 +1,15 @@
+IMAGE                                           TAG                  IMAGE ID            SIZE
+docker.io/kindest/kindnetd                      v20260528-9350166c   e44e5463fce88       39.7MB
+docker.io/kindest/local-path-helper             v20260131-7181c60a   19aa6a21b42cb       2.87MB
+docker.io/kindest/local-path-provisioner        v20260521-9fb22683   e5e695fbdadac       15.9MB
+registry.k8s.io/coredns/coredns                 v1.14.2              38667dd9be96c       23.3MB
+registry.k8s.io/etcd                            3.6.8-0              ee85eb1f0edd2       22.9MB
+registry.k8s.io/kube-apiserver-amd64            v1.36.1              315157c5c4d76       96.7MB
+registry.k8s.io/kube-apiserver                  v1.36.1              315157c5c4d76       96.7MB
+registry.k8s.io/kube-controller-manager-amd64   v1.36.1              c2616bc3c6956       85.9MB
+registry.k8s.io/kube-controller-manager         v1.36.1              c2616bc3c6956       85.9MB
+registry.k8s.io/kube-proxy-amd64                v1.36.1              78282b5844742       79.1MB
+registry.k8s.io/kube-proxy                      v1.36.1              78282b5844742       79.1MB
+registry.k8s.io/kube-scheduler-amd64            v1.36.1              b665198f31ae0       60.7MB
+registry.k8s.io/kube-scheduler                  v1.36.1              b665198f31ae0       60.7MB
+registry.k8s.io/pause                           3.10                 873ed75102791       320kB

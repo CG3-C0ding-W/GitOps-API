@@ -1,10 +1,10 @@
 
 resource "helm_release" "ingress_nginx" {
-  name                  = "ingess-nginx"
+  name                  = "ingress-nginx"
   repository            = "https://kubernetes.github.io/ingress-nginx"
-  chart                 = "ingess-nginx"
+  chart                 = "ingress-nginx"
   namespace             = "ingress-nginx"
-  create_namespace      = true
+  create_namespace      =  true
 
   set = [
     {
@@ -18,6 +18,7 @@ resource "helm_release" "ingress_nginx" {
     {
         name = "controller.nodeSelector.ingress-ready"
         value = "true"
+        type = "string"
     }
   ]
 }

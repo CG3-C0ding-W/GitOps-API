@@ -1,0 +1,58 @@
+
+# ---- Terraform ----
+# Local state, provider cache, and lock-free crash logs
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+# Variable files that often hold secrets
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+# Keep .terraform.lock.hcl tracked (see note below) — do NOT ignore it
+
+# ---- Python / FastAPI ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+
+# ---- Node / React (frontend) ----
+node_modules/
+dist/
+build/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ---- Environment / secrets ----
+.env
+.env.*
+*.local
+
+# ---- Kubernetes / Helm ----
+# Rendered charts and downloaded chart deps
+charts/**/charts/
+*.tgz
+# Any kubeconfig you export locally
+kubeconfig
+*.kubeconfig
+
+# ---- Editor / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
