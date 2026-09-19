@@ -1,0 +1,15 @@
+
+api:
+    image: myapp-api
+    tag: v0.1.0
+    replicas: 2
+    port: 8000
+
+frontend:
+    image: myapp-frontend
+    tag: v0.1.0 
+    replicas: 1
+    port: 80
+
+ingress:
+    host: myapp.local
