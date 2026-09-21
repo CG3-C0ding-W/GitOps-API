@@ -20,6 +20,6 @@ ITEMS = [
 def health():
     return {"status": "ok"}
 
-@app.get("/api/items")
+@app.get("/items")
 def list_items():
     return ITEMS
